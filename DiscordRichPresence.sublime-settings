@@ -29,7 +29,7 @@
     "send_start_timestamp": true,
 
     // Whether or not to use the small icon (changes for every language) in the presence.
-    "small_icon": true,
+    "small_icon": false,
 
     // Use the language icon as the big icon, overrides 'small_icon'
     "big_icon": false,
