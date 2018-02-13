@@ -9,7 +9,7 @@ from . import discord_ipc
 
 SETTINGS_FILE = 'DiscordRichPresence.sublime-settings'
 settings = {}
-DISCORD_CLIENT_ID = '389368374645227520'
+DISCORD_CLIENT_ID = '413091551141691393'
 RECONNECT_DELAY = 15000
 
 logger = logging.getLogger(__name__)
@@ -25,7 +25,7 @@ start_time = time.time()
 def base_activity():
     activity = {
         'assets': {'large_image': 'sublime3',
-                   'large_text': 'Sublime Text 3 v%s' % (sublime.version())},
+                   'large_text': 'Sublime Text v%s' % (sublime.version())},
         'instance': False
     }
     if settings.get('send_start_timestamp'):
@@ -49,6 +49,7 @@ AVAILABLES_ICONS = {
     'ruby',
     'html',
     'rust',
+    'sh',
 }
 
 # Map a scope to a specific icon. The first token of the scope (source or text)
@@ -59,6 +60,8 @@ SCOPE_ICON_MAP = {
     'js': 'javascript',
     'ts': 'typescript',
     'html.markdown': 'markdown',
+    'md': 'markdown',
+    'readme': 'markdown',
 }
 
 def get_icon(main_scope):
