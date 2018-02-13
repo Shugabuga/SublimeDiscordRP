@@ -3,7 +3,7 @@
 		"caption": "Preferences: Discord Rich Presence Settings",
 		"command": "edit_settings",
 		"args": {
-			"base_file": "${packages}/Discord Rich Presence/DiscordRichPresence.sublime-settings",
+			"base_file": "${packages}/SublimeDiscordRP/DiscordRichPresence.sublime-settings",
 			"default": "{\n\t$0\n}\n"
 		}
 	},
